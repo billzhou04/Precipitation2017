@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2: Interactive Visualization on Avg US Temperature (2017)</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 2: Interactive Visualization on Top US Precipitation and Wind Speeds (2017)</h1>
+        <div class="intro">
+            <p>This visualization shows the max precipitation and wind speed (WSF5) across the different states in the United States for 2017.</p>
+            <p><strong>Key insight:</strong> Readers are able to extract tropical storms and hurricane instances through the map according to the level of precipitation. The data that
+                is present is only for the months of January till Septermber of 2017.</p>
+        </div>
+
+        <div id="controls">
+            <p>Month: <span id="month-value">January</span></p>
+            <div id="slider"></div>
+        </div>
+        
+        <div id="vis"></div>
+
+        
+    </div>
+
+    <div id="tooltip" style="display:none"></div>
+
+    <!-- Load D3.js and TopoJSON -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

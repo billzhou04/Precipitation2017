@@ -1,0 +1,42 @@
+* {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0px auto;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+#vis svg {
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+}
+
+#tooltip {
+    position: absolute;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+
+.state {
+    stroke: #fff;
+    stroke-width: 0.5px;
+    transition: stroke-width 0.2s;
+}
+
+.state:hover {
+    stroke: #000;
+    stroke-width: 2px;
+    cursor: pointer;
+}
