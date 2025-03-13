@@ -11,8 +11,18 @@
         <h1>Assignment 2: Interactive Visualization on Top US Precipitation and Wind Speeds (2017)</h1>
         <div class="intro">
             <p>This visualization shows the max precipitation and wind speed (WSF5) across the different states in the United States for 2017.</p>
-            <p><strong>Key insight:</strong> Readers are able to extract tropical storms and hurricane instances through the map according to the level of precipitation. The data that
+            <p><strong>Key insight:</strong> Readers are able to extract tropical storms and hurricane instances through the map according to the level of precipitation. For example, Hurricane Harvey, which landed on Texas in August, 2017, can be seen by Texas' significantly darker blue color when the slider is adjusted to August. The data that
                 is present is only for the months of January till Septermber of 2017.</p>
+            <p><strong>Writeup:</strong> Our initial dataset was the weather dataset from Daily Weather in the US, 2017. That data was then filtered using a script with pandas in which we extracted state, month, top wind speed (WSF5), and precipitation (PRCP). We used this data set to make inferences about when and where tropical storms and hurricanes took place across the US during this time period. 
+                <br/>
+                Our visualization is a choropleth, which is a map that displays statistical information. We chose this type of visualization because we thought that it would be the best way to uncover meaning behind the dataset. It would easily encode geographic location, which could tell a story about a hurricane path or periods of heavy rain. As for how we encoded the precipitation, we chose to denote heavy precipitation with a darker blue and light precipitation with lighter blue. We also considered using average precipitation and wind speeds, but the average metrics would not be able to capture instances of storms as well if the state is usually dry and has low winds, as they would balance the measurements. 
+                <br/>
+                The dataset is from NOAA Daily Global Historical Climatology Network. The NOAA is a government agency that deals with weather and climate, and they published a dataset with metrics across the US from 2017. Our visualization does not build upon any existing visualizations. 
+                <br/>
+                The work was split evenly between the team members. The total time that it took to complete the development of the application was around 15 hours. The development process included a few phases: planning, coding, debugging, modifying, and testing. We originally had the visualization show average temperature change across the US, but we had trouble deriving any meaningful takeaways, so we moved to max precipitation and wind speeds. It was also tricky to work with the color opacity because August Texas was such a large outlier that scaling the opacity to Texas’ precipitation value would dull out all the other states’ colors. The solution was to scale the color to slightly above the second highest precipitation value, which was September Florida. The aspect that took the most time was coding the interactive visualization. 
+                <br/>
+                Generative AI was utilized for JavaScript semantics. 
+                </p>
         </div>
 
         <div id="controls">
